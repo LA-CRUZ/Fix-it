@@ -13,7 +13,7 @@ public class SyncFlip : NetworkBehaviour
         if(!isLocalPlayer)
         {
             m_FacingRight = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController2D>().m_FacingRight;
-            move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().horizontalMove * Time.deltaTime;
+            move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerActionHandler>().horizontalMove * Time.deltaTime;
             if (move < 0 && m_FacingRight)
                 Flip();
         }        
