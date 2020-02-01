@@ -65,5 +65,18 @@ public class Pattern : MonoBehaviour
         this.updateIsFinished();
     }
 
-    
+    int getNbItem1 ()
+    {
+        return nbItem1;
+    }
+
+    int getNbItem2()
+    {
+        return nbItem2;
+    }
+
+    int getNbItem3()
+    {
+        return nbItem3;
+    }
 }
