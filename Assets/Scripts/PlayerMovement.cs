@@ -6,8 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController2D controller;
+    public Animator animator;
 
-    public float runSpeed = 100f;
+    public string horizontalKey = "Horizontal1";
+    public string jumpKey = "Jump1";
+
+
+    public float runSpeed = 30f;
     float horizontalMove = 0f;
     bool jump = false;
 
@@ -19,18 +24,25 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; // Value between -1 and 1 for a,d,arrows, controller
-        if (Input.GetButtonDown("Jump"))
+        horizontalMove = Input.GetAxisRaw(horizontalKey) * runSpeed; // Value between -1 and 1 for a,d,arrows, controller
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+        if (Input.GetButtonDown(jumpKey))
         {
-            Debug.Log(Input.GetButtonDown("Jump"));
             jump = true;
+            animator.SetBool("isJumping", true);
         }
+    }
+
+    public void OnLanding()
+    {
+        animator.SetBool("isJumping", false);
     }
 
     void FixedUpdate()
     {    
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
-
     }
 }
