@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{6cf07640-9b88-4cc7-aaa4-f7e75a233904}">
+		<property name="assetPath">
+			<value>INTERACTION/DROP_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.28000000000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{291f83fe-55e9-4dde-91a8-8c8e2abe79d1}</destination>
+		</relationship>
+	</object>
+</objects>
