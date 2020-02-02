@@ -4336,6 +4336,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5240288718493925116, guid: a21c22fb39c626244ab7487218bee91d,
+        type: 3}
+      propertyPath: minX
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240288718493925116, guid: a21c22fb39c626244ab7487218bee91d,
+        type: 3}
+      propertyPath: Xinterm1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240288718493925116, guid: a21c22fb39c626244ab7487218bee91d,
+        type: 3}
+      propertyPath: Xinterm2
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240288718493925116, guid: a21c22fb39c626244ab7487218bee91d,
+        type: 3}
+      propertyPath: maxX
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5240288718493925118, guid: a21c22fb39c626244ab7487218bee91d,
         type: 3}
       propertyPath: m_Name
@@ -4344,7 +4364,7 @@ PrefabInstance:
     - target: {fileID: 5240288718493925118, guid: a21c22fb39c626244ab7487218bee91d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21c22fb39c626244ab7487218bee91d, type: 3}
@@ -4430,6 +4450,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810062600228229199, guid: e075694d37a55d14083725402b7a0b90,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bc1d8863e1143a747b1e0385e7f5e9ae, type: 2}
+    - target: {fileID: 8810062600228229199, guid: e075694d37a55d14083725402b7a0b90,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8810062600228229204, guid: e075694d37a55d14083725402b7a0b90,
         type: 3}
@@ -4673,6 +4703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 412231289025803030, guid: 11734a34af44fe6458da930ee20532cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: pattern
       objectReference: {fileID: 0}
     - target: {fileID: 1905565439024985009, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
@@ -7672,6 +7707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 412231289025803030, guid: 11734a34af44fe6458da930ee20532cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: pattern
       objectReference: {fileID: 0}
     - target: {fileID: 1905565439024985009, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
