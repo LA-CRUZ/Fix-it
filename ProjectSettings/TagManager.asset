@@ -8,6 +8,7 @@ TagManager:
   - item2
   - item3
   - pattern
+  - Spawner
   layers:
   - Default
   - TransparentFX

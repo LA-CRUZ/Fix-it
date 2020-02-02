@@ -8,8 +8,12 @@ public class Scoring : MonoBehaviour
 {
 
     public Color colorP1 = Color.red;
+    public GameObject patternP1;
     public Color colorP2 = Color.blue;
+    public GameObject patternP2;
+
     public int scoreMax = 3;
+
 
     public GameObject completeLevelUI;
 
@@ -22,18 +26,24 @@ public class Scoring : MonoBehaviour
     void Start()
     {
         scoreWin = scoreMax / 2 + 1;
-        updateScore(2);
-        updateScore(1);
-        updateScore(1);
-        updateScore(1);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (patternP1.GetComponent<Pattern>().isFinished)
+        {
+            updateScore(1);
+            patternP1.GetComponent<Pattern>().reset();
+        }
+        if (patternP2.GetComponent<Pattern>().isFinished)
+        {
+            updateScore(2);
+            patternP2.GetComponent<Pattern>().reset();
+        }
     }
 
-  void updateScore(int player)
+  public void updateScore(int player)
     {
         currentScore++;
     
@@ -72,6 +82,7 @@ public class Scoring : MonoBehaviour
 
     public void quit()
     {
-        SceneManager.LoadScene("mainScene");
+        Debug.Log("quit");
+        SceneManager.LoadScene("Menu");
     }
 }
