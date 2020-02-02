@@ -5415,6 +5415,11 @@ PrefabInstance:
       propertyPath: NB_ITEMS
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5146628753008052530, guid: 11734a34af44fe6458da930ee20532cc,
+        type: 3}
+      propertyPath: player1
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8138117075519786199, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
       propertyPath: m_Color.r
@@ -9132,6 +9137,11 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 384201282}
+    - target: {fileID: 5146628753008052530, guid: 11734a34af44fe6458da930ee20532cc,
+        type: 3}
+      propertyPath: player2
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11734a34af44fe6458da930ee20532cc, type: 3}
 --- !u!1 &1710945952

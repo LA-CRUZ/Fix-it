@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/INTERACTIONS/DRAG
   guid: b883244a0af1944483dddd2606adc1d7
   Banks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -37,11 +37,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637162185889917884
+  lastModified: 637162261746137411
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1040
+  Exists: 1
+--- !u!114 &-6810911217159503903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FOULE/FOULE EN DELIRE
+  m_EditorClassIdentifier: 
+  Name: FOULE EN DELIRE
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &-6343342420097881366
 MonoBehaviour:
@@ -58,7 +75,7 @@ MonoBehaviour:
   Path: event:/UI/SELECT
   guid: c671439faa426043a0da810bc78204ca
   Banks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -83,7 +100,7 @@ MonoBehaviour:
   lastModified: 637162185889898391
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4999858550269937812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,12 +133,12 @@ MonoBehaviour:
   Path: event:/AMB/FOULE
   guid: 7223a0c6351dc74aac9281f19779dabc
   Banks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -16408567115181760}
+  - {fileID: -6810911217159503903}
   MinDistance: 0
   MaxDistance: 0
   Length: 121445
@@ -158,7 +175,7 @@ MonoBehaviour:
   Path: event:/CUE/MUSIQUE
   guid: 7486011f8fcef54eb41618ef4f2b1ba7
   Banks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -182,7 +199,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -8523273976913430186}
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   EditorEvents:
   - {fileID: 6036017897338687406}
   - {fileID: -3864829818828479812}
@@ -207,11 +224,29 @@ MonoBehaviour:
   - {fileID: -6343342420097881366}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   StringsBanks:
   - {fileID: -8523273976913430186}
-  stringsBankWriteTime: 637162185889917884
+  stringsBankWriteTime: 637162261746137411
   cacheVersion: 3
+--- !u!114 &1456948604135585773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162261746117811
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4627913523493708630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +262,7 @@ MonoBehaviour:
   Path: event:/CHARACHTER/FOOTSTEPS
   guid: 7d03ee218ae7ae49b22f643ab9135e00
   Banks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -250,7 +285,7 @@ MonoBehaviour:
   Path: event:/INTERACTIONS/DROP
   guid: 6d4b64c90991ad4eb639b2cfc20f21ad
   Banks:
-  - {fileID: -5130675976408829669}
+  - {fileID: 1456948604135585773}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
