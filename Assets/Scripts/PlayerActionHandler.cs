@@ -73,7 +73,14 @@ public class PlayerActionHandler : MonoBehaviour
     {
         //gameObject.transform = new Vector3(spawn.position.x, spawn.position.y, spawn.position.z);
         gameObject.transform.position = spawn;
-        handsTaken = false;
+        foreach (Transform child in gameObject.transform)
+        {
+            if (child.tag.Contains("item"))
+            {
+                Destroy(child.gameObject);
+                handsTaken = false;
+            }
+        }
 
 
     }
