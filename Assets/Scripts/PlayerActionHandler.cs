@@ -92,6 +92,7 @@ public class PlayerActionHandler : MonoBehaviour
                         {
                             if (child.tag.Contains("item"))
                             {
+                                print(child.tag);
                                 go.GetComponent<Pattern>().addItem(child.tag);
                                 Destroy(child.gameObject);
                                 FMODUnity.RuntimeManager.PlayOneShot(soundDrop, gameObject.transform.position);
