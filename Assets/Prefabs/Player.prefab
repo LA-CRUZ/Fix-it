@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4665722985045901025, guid: afd151b7deec7424487f9ccedd69f898,
+        type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665722985045901025, guid: afd151b7deec7424487f9ccedd69f898,
+        type: 3}
+      propertyPath: m_JumpForce
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 4665722985045901029, guid: afd151b7deec7424487f9ccedd69f898,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,6 +72,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4665722985045901054, guid: afd151b7deec7424487f9ccedd69f898,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 8810062600228229199}
+    - target: {fileID: 4665722985045901054, guid: afd151b7deec7424487f9ccedd69f898,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 8810062600228229194}
     - target: {fileID: 4665722985045901055, guid: afd151b7deec7424487f9ccedd69f898,
         type: 3}
       propertyPath: m_Name
@@ -74,3 +94,21 @@ PrefabInstance:
     - {fileID: 180153188444153974, guid: afd151b7deec7424487f9ccedd69f898, type: 3}
     - {fileID: -1300658330346125946, guid: afd151b7deec7424487f9ccedd69f898, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: afd151b7deec7424487f9ccedd69f898, type: 3}
+--- !u!114 &8810062600228229194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4665722985045901025, guid: afd151b7deec7424487f9ccedd69f898,
+    type: 3}
+  m_PrefabInstance: {fileID: 4250372291659558571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd188bcde1a62c4f87d0c7549cb363c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &8810062600228229199 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4665722985045901028, guid: afd151b7deec7424487f9ccedd69f898,
+    type: 3}
+  m_PrefabInstance: {fileID: 4250372291659558571}
+  m_PrefabAsset: {fileID: 0}
