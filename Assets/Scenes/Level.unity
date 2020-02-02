@@ -5848,6 +5848,11 @@ PrefabInstance:
       propertyPath: patternP2
       value: 
       objectReference: {fileID: 769154124}
+    - target: {fileID: 4771648680270217451, guid: 3c5610a5647ef144c983a26df5d85fa6,
+        type: 3}
+      propertyPath: soundRound
+      value: event:/INTERACTIONS/ROUND CRAFT
+      objectReference: {fileID: 0}
     - target: {fileID: 4771648680804050291, guid: 3c5610a5647ef144c983a26df5d85fa6,
         type: 3}
       propertyPath: m_SortingOrder
@@ -14567,8 +14572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/AMB/FOULE
-  PlayEvent: 1
-  StopEvent: 0
+  PlayEvent: 11
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -25135,8 +25140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/CUE/MUSIQUE
-  PlayEvent: 1
-  StopEvent: 0
+  PlayEvent: 11
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

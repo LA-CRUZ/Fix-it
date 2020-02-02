@@ -17,6 +17,9 @@ public class Scoring : MonoBehaviour
 
     public GameObject completeLevelUI;
 
+    [FMODUnity.EventRef]
+    public string soundRound;
+
     private int currentScore = 0;
     private int scoreWin;
     private int scoreP1 = 0;
@@ -26,8 +29,6 @@ public class Scoring : MonoBehaviour
     void Start()
     {
         scoreWin = scoreMax / 2 + 1;
-        updateScore(2);
-        updateScore(1);
     }
 
     // Update is called once per frame
@@ -47,6 +48,7 @@ public class Scoring : MonoBehaviour
 
         if (reset)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(soundRound, gameObject.transform.position);
             patternP1.GetComponent<Pattern>().reset();
             GameObject.Find("Player1").GetComponent<PlayerActionHandler>().reset();
             patternP2.GetComponent<Pattern>().reset();
