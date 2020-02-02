@@ -62,13 +62,11 @@ public class PlayerActionHandler : MonoBehaviour
         jump = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (interact)
         {
             GameObject go = collision.gameObject;
-            Debug.Log("yeee 1");
-            Debug.Log(collision.tag);
             switch (collision.tag)
             {
                 case "item1": //On ramasse l'item 1
@@ -76,11 +74,7 @@ public class PlayerActionHandler : MonoBehaviour
                 case "item3": //On ramasse l'item 3
                     if (!handsTaken)
                     {
-                        Debug.Log(go);
-                        Debug.Log(gameObject);
-                        Debug.Log(gameObject.transform);
                         go.transform.SetParent(gameObject.transform);
-                        Debug.Log(go);
                         handsTaken = true;
                         go.SetActive(false);
                     }
@@ -94,6 +88,7 @@ public class PlayerActionHandler : MonoBehaviour
                             {
                                 go.GetComponent<Pattern>().addItem(child.tag);
                                 Destroy(child.gameObject);
+                                handsTaken = false;
                             }
                         }
                     }

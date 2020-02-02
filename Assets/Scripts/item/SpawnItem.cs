@@ -5,10 +5,18 @@ using UnityEngine;
 public class SpawnItem : MonoBehaviour
 {
     [SerializeField]
-    private Transform itemPrefab;
+    private Transform itemPrefab1;
+    [SerializeField]
+    private Transform itemPrefab2;
+    [SerializeField]
+    private Transform itemPrefab3;
     // les dimension en x de l'arène
     [SerializeField]
     private int minX = -6;
+    [SerializeField]
+    private float Xinterm1 = 2;
+    [SerializeField]
+    private float Xinterm2 = -2;
     [SerializeField]
     private int maxX = 6;
     [SerializeField]
@@ -66,20 +74,46 @@ public class SpawnItem : MonoBehaviour
     {
         if (oldSpawnPosition.position.x == 0)
         {
-            spawnPosition.position = new Vector3(Random.Range(minX / 2, maxX / 2), spawnPosition.position.y, spawnPosition.position.z);
+            //do
+           // {
+                spawnPosition.position = new Vector3(Random.Range(minX / 2, maxX / 2), spawnPosition.position.y, spawnPosition.position.z);
+            //} while (spawnPosition.position.x >= Xinterm2 && spawnPosition.position.x <= Xinterm1);
         }
         else
         {
             if (oldSpawnPosition.position.x < 0)
-                spawnPosition.position = new Vector3(Random.Range(0, maxX), spawnPosition.position.y, spawnPosition.position.z);
+               // do
+              //  {
+                    spawnPosition.position = new Vector3(Random.Range(0, maxX), spawnPosition.position.y, spawnPosition.position.z);
+             //   } while (spawnPosition.position.x >= Xinterm2 && spawnPosition.position.x <= Xinterm1);
+
+
             else
-                spawnPosition.position = new Vector3(Random.Range(minX, 0), spawnPosition.position.y, spawnPosition.position.z);
+              //  do
+              //  {
+                    spawnPosition.position = new Vector3(Random.Range(minX, 0), spawnPosition.position.y, spawnPosition.position.z);
+             //   } while (spawnPosition.position.x >= Xinterm2 && spawnPosition.position.x <= Xinterm1);
         }
 
         int randomItemTag = Random.Range(0, 3);
-        itemPrefab.tag = "item" + randomItemTag;
+        switch (randomItemTag)
+        {
+            case 0:
+                Instantiate(itemPrefab1, spawnPosition.position, spawnPosition.rotation);
+                break;
+            case 1:
+                Instantiate(itemPrefab2, spawnPosition.position, spawnPosition.rotation);
+                break;
+            case 2:
+                Instantiate(itemPrefab3, spawnPosition.position, spawnPosition.rotation);
+                break;
+
+            default: break;
+
+        }
         // setTagItem(); // a utiliser quand après que Pattern soit appelé
-        Instantiate(itemPrefab, spawnPosition.position, spawnPosition.rotation);
+
+        
         oldSpawnPosition = spawnPosition;
     }
 
@@ -94,21 +128,6 @@ public class SpawnItem : MonoBehaviour
             {
                 isDone = true;
                 countItem[randomItemTag] = countItem[randomItemTag] - 1;
-
-                switch (randomItemTag)
-                {
-                    case 0:
-                        itemPrefab.tag = "item1";
-                        break;
-                    case 1:
-                        itemPrefab.tag = "item2";
-                        break;
-                    case 2:
-                        itemPrefab.tag = "item3";
-                        break;
-                    default:
-                        break;
-                }
             }else
             {
                 randomItemTag = Random.Range(0, 3);

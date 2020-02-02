@@ -2316,7 +2316,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d875aef468fe343b44095501b152cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 5175410002321595347, guid: 8da06af37b2ec444991a1488f90e044e,
+  itemPrefab1: {fileID: 4353474536909198844, guid: 2f0e3678fba0a334b81efc0499cb041b,
+    type: 3}
+  itemPrefab2: {fileID: 5175410002321595347, guid: 8da06af37b2ec444991a1488f90e044e,
+    type: 3}
+  itemPrefab3: {fileID: 7214978442858043276, guid: 2be481e2ec2be0d43b059ec965e5a9df,
     type: 3}
   minX: -6
   maxX: 6
