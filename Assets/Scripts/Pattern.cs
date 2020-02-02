@@ -9,6 +9,9 @@ public class Pattern : MonoBehaviour
 
     public int NB_ITEMS;
     public bool isFinished;
+
+    public bool player1 = true;
+    public bool player2 = true;
     
     void Start()
     {

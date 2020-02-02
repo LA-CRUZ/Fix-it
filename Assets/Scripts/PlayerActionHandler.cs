@@ -93,17 +93,21 @@ public class PlayerActionHandler : MonoBehaviour
                     }
                     break;
                 case "pattern": //On range dans un pattern
-                    if (handsTaken)
+                    if(go.GetComponent<Pattern>().player1 && gameObject.name == "Player1" ||
+                        go.GetComponent<Pattern>().player2 && gameObject.name == "Player2")
                     {
-                        foreach(Transform child in gameObject.transform)
+                        if (handsTaken)
                         {
-                            if (child.tag.Contains("item"))
+                            foreach (Transform child in gameObject.transform)
                             {
-                                print(child.tag);
-                                go.GetComponent<Pattern>().addItem(child.tag);
-                                Destroy(child.gameObject);
-                                FMODUnity.RuntimeManager.PlayOneShot(soundDrop, gameObject.transform.position);
-                                handsTaken = false;
+                                if (child.tag.Contains("item"))
+                                {
+                                    print(child.tag);
+                                    go.GetComponent<Pattern>().addItem(child.tag);
+                                    Destroy(child.gameObject);
+                                    FMODUnity.RuntimeManager.PlayOneShot(soundDrop, gameObject.transform.position);
+                                    handsTaken = false;
+                                }
                             }
                         }
                     }
