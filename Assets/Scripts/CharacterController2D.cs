@@ -58,6 +58,15 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+
+        // No animation during a jump
+        if (!m_Grounded)
+        {
+            gameObject.GetComponent<Animator>().enabled = false;
+        }else
+        {
+            gameObject.GetComponent<Animator>().enabled = true;
+        }
 	}
 
 
