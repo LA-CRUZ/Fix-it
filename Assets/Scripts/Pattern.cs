@@ -28,15 +28,15 @@ public class Pattern : MonoBehaviour
         expectedItem3 = remainingItems;
     }
 
-    private void updateIsFinished()
+    private bool updateIsFinished()
     {
         if (nbItem1 == expectedItem1 &&
             nbItem2 == expectedItem2 &&
             nbItem3 == expectedItem3)
         {
-            isFinished = true;
+            return true;
         }
-        isFinished = false;
+        return false;
     }
 
     public void addItem(string tagItem)
@@ -62,7 +62,13 @@ public class Pattern : MonoBehaviour
                 }
                 break;
         }
-        this.updateIsFinished();
+
+        isFinished = updateIsFinished();
+    }
+
+    public void reset()
+    {
+        Start();
     }
 
     public int getNbItem1 ()
