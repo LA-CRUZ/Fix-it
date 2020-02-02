@@ -31,14 +31,21 @@ public class Scoring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool reset = false;
         if (patternP1.GetComponent<Pattern>().isFinished)
         {
             updateScore(1);
-            patternP1.GetComponent<Pattern>().reset();
+            reset = true;
         }
         if (patternP2.GetComponent<Pattern>().isFinished)
         {
             updateScore(2);
+            reset = true;
+        }
+
+        if (reset)
+        {
+            patternP1.GetComponent<Pattern>().reset();
             patternP2.GetComponent<Pattern>().reset();
         }
     }
