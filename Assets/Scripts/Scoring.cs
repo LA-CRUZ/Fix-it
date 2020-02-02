@@ -46,7 +46,9 @@ public class Scoring : MonoBehaviour
         if (reset)
         {
             patternP1.GetComponent<Pattern>().reset();
+            GameObject.Find("Player1").GetComponent<PlayerActionHandler>().reset();
             patternP2.GetComponent<Pattern>().reset();
+            GameObject.Find("Player2").GetComponent<PlayerActionHandler>().reset();
         }
     }
 

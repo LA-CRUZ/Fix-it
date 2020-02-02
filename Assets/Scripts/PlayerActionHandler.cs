@@ -25,10 +25,12 @@ public class PlayerActionHandler : MonoBehaviour
     bool jump = false;
     bool interact = false;
 
+    public Vector3 spawn;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawn = gameObject.transform.position;
     }
 
     void Update()
@@ -65,6 +67,15 @@ public class PlayerActionHandler : MonoBehaviour
     {    
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+    }
+
+    public void reset()
+    {
+        //gameObject.transform = new Vector3(spawn.position.x, spawn.position.y, spawn.position.z);
+        gameObject.transform.position = spawn;
+        handsTaken = false;
+
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
