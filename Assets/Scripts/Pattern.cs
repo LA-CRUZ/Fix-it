@@ -43,19 +43,19 @@ public class Pattern : MonoBehaviour
     {
         switch (tagItem)
         {
-            case "1":
+            case "item1":
                 if(nbItem1 < expectedItem1)
                 {
                     nbItem1++;
                 }
                 break;
-            case "2":
+            case "item2":
                 if (nbItem2 < expectedItem2)
                 {
                     nbItem2++;
                 }
                 break;
-            case "3":
+            case "item3":
                 if (nbItem3 < expectedItem3)
                 {
                     nbItem3++;
@@ -65,18 +65,33 @@ public class Pattern : MonoBehaviour
         this.updateIsFinished();
     }
 
-    int getNbItem1 ()
+    public int getNbItem1 ()
     {
         return nbItem1;
     }
 
-    int getNbItem2()
+    public int getNbItem2()
     {
         return nbItem2;
     }
 
-    int getNbItem3()
+    public int getNbItem3()
     {
         return nbItem3;
+    }
+
+    public int getExpectedItem1()
+    {
+        return expectedItem1;
+    }
+
+    public int getExpectedItem2()
+    {
+        return expectedItem2;
+    }
+
+    public int getExpectedItem3()
+    {
+        return expectedItem3;
     }
 }
