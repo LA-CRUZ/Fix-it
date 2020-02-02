@@ -21193,7 +21193,7 @@ PrefabInstance:
     - target: {fileID: 5146628753008052530, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
       propertyPath: NB_ITEMS
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5146628753008052530, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
@@ -30321,7 +30321,7 @@ PrefabInstance:
     - target: {fileID: 5146628753008052530, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
       propertyPath: NB_ITEMS
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5146628753008052530, guid: 11734a34af44fe6458da930ee20532cc,
         type: 3}
