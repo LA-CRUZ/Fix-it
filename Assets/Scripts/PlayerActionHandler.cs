@@ -85,11 +85,11 @@ public class PlayerActionHandler : MonoBehaviour
 
                         go.transform.position = gameObject.transform.position + new Vector3(0, 0.5f, 0);
                         go.GetComponent<Rigidbody2D>().isKinematic = true;
+                        go.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
                         foreach ( BoxCollider2D collider in go.GetComponents<BoxCollider2D>())
                         {
                             collider.enabled = false;
                         }
-                        //go.SetActive(false);
                     }
                     break;
                 case "pattern": //On range dans un pattern
