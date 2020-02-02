@@ -26,8 +26,6 @@ public class Scoring : MonoBehaviour
     void Start()
     {
         scoreWin = scoreMax / 2 + 1;
-        updateScore(2);
-        updateScore(1);
     }
 
     // Update is called once per frame
