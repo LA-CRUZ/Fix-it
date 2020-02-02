@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{e7fe1ea4-614f-4e45-937e-526894e7f715}">
+		<property name="name">
+			<value>FOULE EN DELIRE</value>
+		</property>
+		<relationship name="folder">
+			<destination>{78acb6ff-56dd-4060-bb01-e5b6d1114255}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1520a26e-ea2b-4d86-b282-0fefd87788e3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1520a26e-ea2b-4d86-b282-0fefd87788e3}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
