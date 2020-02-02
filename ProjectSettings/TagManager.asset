@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - 1
-  - 2
-  - 3
   - item1
   - item2
   - item3
+  - pattern
   layers:
   - Default
   - TransparentFX
