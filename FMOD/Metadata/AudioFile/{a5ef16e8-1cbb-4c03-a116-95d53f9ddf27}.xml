@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{a5ef16e8-1cbb-4c03-a116-95d53f9ddf27}">
+		<property name="assetPath">
+			<value>CHARACHTER/FOOTSTEP METAL_4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.27400000000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{291f83fe-55e9-4dde-91a8-8c8e2abe79d1}</destination>
+		</relationship>
+	</object>
+</objects>

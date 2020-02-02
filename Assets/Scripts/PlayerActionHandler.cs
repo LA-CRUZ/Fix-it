@@ -16,6 +16,11 @@ public class PlayerActionHandler : MonoBehaviour
     public float runSpeed = 30f;
     public float horizontalMove = 0f;
 
+    [FMODUnity.EventRef]
+    public string soundDrag;
+    [FMODUnity.EventRef]
+    public string soundDrop;
+
     bool handsTaken = false;
     bool jump = false;
     bool interact = false;
@@ -76,6 +81,7 @@ public class PlayerActionHandler : MonoBehaviour
                     {
                         go.transform.SetParent(gameObject.transform);
                         handsTaken = true;
+                        FMODUnity.RuntimeManager.PlayOneShot(soundDrag, gameObject.transform.position);
                         go.SetActive(false);
                     }
                     break;
@@ -89,6 +95,7 @@ public class PlayerActionHandler : MonoBehaviour
                                 print(child.tag);
                                 go.GetComponent<Pattern>().addItem(child.tag);
                                 Destroy(child.gameObject);
+                                FMODUnity.RuntimeManager.PlayOneShot(soundDrop, gameObject.transform.position);
                                 handsTaken = false;
                             }
                         }
